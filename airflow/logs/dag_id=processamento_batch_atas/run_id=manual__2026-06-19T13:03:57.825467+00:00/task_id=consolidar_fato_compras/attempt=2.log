@@ -1,0 +1,36 @@
+[2026-06-19T13:09:06.507+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras permission to 509
+[2026-06-19T13:09:06.509+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras'
+[2026-06-19T13:09:06.593+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras permission to 509
+[2026-06-19T13:09:06.595+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras'
+[2026-06-19T13:09:06.684+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: processamento_batch_atas.consolidar_fato_compras manual__2026-06-19T13:03:57.825467+00:00 [queued]>
+[2026-06-19T13:09:06.704+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: processamento_batch_atas.consolidar_fato_compras manual__2026-06-19T13:03:57.825467+00:00 [queued]>
+[2026-06-19T13:09:06.706+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2026-06-19T13:09:06.732+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): consolidar_fato_compras> on 2026-06-19 13:03:57.825467+00:00
+[2026-06-19T13:09:06.748+0000] {standard_task_runner.py:57} INFO - Started process 247 to run task
+[2026-06-19T13:09:06.759+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'processamento_batch_atas', 'consolidar_fato_compras', 'manual__2026-06-19T13:03:57.825467+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/dag_fato_compras.py', '--cfg-path', '/tmp/tmpjmbwncxg']
+[2026-06-19T13:09:06.765+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask consolidar_fato_compras
+[2026-06-19T13:09:06.893+0000] {logging_mixin.py:151} INFO - Changing /opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras permission to 509
+[2026-06-19T13:09:06.895+0000] {logging_mixin.py:151} INFO - Failed to change /opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras permission to 509: [Errno 1] Operation not permitted: '/opt/airflow/logs/dag_id=processamento_batch_atas/run_id=manual__2026-06-19T13:03:57.825467+00:00/task_id=consolidar_fato_compras'
+[2026-06-19T13:09:06.911+0000] {task_command.py:415} INFO - Running <TaskInstance: processamento_batch_atas.consolidar_fato_compras manual__2026-06-19T13:03:57.825467+00:00 [running]> on host 6ef7eab4850b
+[2026-06-19T13:09:07.102+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='engenharia_dados' AIRFLOW_CTX_DAG_ID='processamento_batch_atas' AIRFLOW_CTX_TASK_ID='consolidar_fato_compras' AIRFLOW_CTX_EXECUTION_DATE='2026-06-19T13:03:57.825467+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-19T13:03:57.825467+00:00'
+[2026-06-19T13:09:07.105+0000] {logging_mixin.py:151} INFO - Conectando ao banco de dados analítico (ClickHouse)...
+[2026-06-19T13:09:07.166+0000] {logging_mixin.py:151} INFO - 26 registros extraídos. Iniciando processamento Batch...
+[2026-06-19T13:09:07.204+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_fato_compras.py", line 62, in processar_camada_fato
+    client.command(f"ALTER TABLE fato_registro_precos DELETE WHERE data_processamento = '{hoje}'")
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_connect/driver/httpclient.py", line 486, in command
+    response = self._raw_request(payload, params, headers, method, fields=fields, server_wait=False)
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_connect/driver/httpclient.py", line 645, in _raw_request
+    self._error_handler(response)
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_connect/driver/httpclient.py", line 537, in _error_handler
+    raise err_type(err_str, code=code, name=name) from None
+clickhouse_connect.driver.exceptions.DatabaseError: Received ClickHouse exception, code: 60, server response: Code: 60. DB::Exception: Could not find table: fato_registro_precos. (UNKNOWN_TABLE) (version 23.8.16.16 (official build)) (for url http://clickhouse-rpa:8123)
+[2026-06-19T13:09:07.236+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=processamento_batch_atas, task_id=consolidar_fato_compras, execution_date=20260619T130357, start_date=20260619T130906, end_date=20260619T130907
+[2026-06-19T13:09:07.264+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 9 for task consolidar_fato_compras (Received ClickHouse exception, code: 60, server response: Code: 60. DB::Exception: Could not find table: fato_registro_precos. (UNKNOWN_TABLE) (version 23.8.16.16 (official build)) (for url http://clickhouse-rpa:8123); 247)
+[2026-06-19T13:09:07.293+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2026-06-19T13:09:07.337+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

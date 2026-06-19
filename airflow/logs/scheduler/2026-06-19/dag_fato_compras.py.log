@@ -1,0 +1,198 @@
+[2026-06-19T13:03:14.032+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:03:14.034+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:03:14.037+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:03:14.036+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:03:16.030+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:03:16.403+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:03:16.402+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:processamento_batch_atas' as access control is unset.
+[2026-06-19T13:03:16.409+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:03:16.405+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:03:16.456+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:03:16.456+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:03:16.501+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 2.474 seconds
+[2026-06-19T13:03:46.902+0000] {processor.py:157} INFO - Started process (PID=176) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:03:46.907+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:03:46.912+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:03:46.911+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:03:47.753+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:03:47.804+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:03:47.803+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:03:47.855+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:03:47.855+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:03:47.903+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 1.010 seconds
+[2026-06-19T13:04:18.706+0000] {processor.py:157} INFO - Started process (PID=185) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:04:18.708+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:04:18.712+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:04:18.711+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:04:19.490+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:04:19.545+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:04:19.545+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:04:19.601+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:04:19.601+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:04:19.645+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.945 seconds
+[2026-06-19T13:04:50.380+0000] {processor.py:157} INFO - Started process (PID=191) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:04:50.382+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:04:50.385+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:04:50.384+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:04:51.120+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:04:51.171+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:04:51.170+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:04:51.220+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:04:51.220+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:04:51.258+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.886 seconds
+[2026-06-19T13:05:22.071+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:05:22.073+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:05:22.076+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:05:22.075+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:05:22.831+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:05:22.879+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:05:22.878+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:05:22.924+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:05:22.924+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:05:22.963+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.898 seconds
+[2026-06-19T13:05:53.938+0000] {processor.py:157} INFO - Started process (PID=203) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:05:53.941+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:05:53.944+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:05:53.943+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:05:54.506+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:05:54.560+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:05:54.559+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:05:54.611+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:05:54.610+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:05:54.652+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.722 seconds
+[2026-06-19T13:06:25.479+0000] {processor.py:157} INFO - Started process (PID=209) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:06:25.483+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:06:25.486+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:06:25.485+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:06:26.083+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:06:26.156+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:06:26.155+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:06:26.211+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:06:26.211+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:06:26.257+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.786 seconds
+[2026-06-19T13:06:56.383+0000] {processor.py:157} INFO - Started process (PID=215) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:06:56.386+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:06:56.390+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:06:56.389+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:06:57.067+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:06:57.125+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:06:57.124+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:06:57.185+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:06:57.185+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:06:57.227+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.852 seconds
+[2026-06-19T13:07:27.739+0000] {processor.py:157} INFO - Started process (PID=221) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:07:27.741+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:07:27.745+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:07:27.744+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:07:28.291+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:07:28.358+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:07:28.357+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:07:28.405+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:07:28.405+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:07:28.450+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.718 seconds
+[2026-06-19T13:07:58.830+0000] {processor.py:157} INFO - Started process (PID=227) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:07:58.833+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:07:58.836+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:07:58.836+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:07:59.364+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:07:59.427+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:07:59.426+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:07:59.481+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:07:59.481+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:07:59.532+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.708 seconds
+[2026-06-19T13:08:29.833+0000] {processor.py:157} INFO - Started process (PID=233) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:08:29.836+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:08:29.838+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:08:29.837+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:08:30.464+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:08:30.514+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:08:30.514+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:08:30.564+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:08:30.564+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:08:30.603+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.778 seconds
+[2026-06-19T13:09:00.748+0000] {processor.py:157} INFO - Started process (PID=239) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:09:00.751+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:09:00.755+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:09:00.754+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:09:01.337+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:09:01.391+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:09:01.390+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:09:01.450+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:09:01.450+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:09:01.497+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.760 seconds
+[2026-06-19T13:09:31.827+0000] {processor.py:157} INFO - Started process (PID=248) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:09:31.831+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:09:31.836+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:09:31.835+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:09:32.821+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:09:32.904+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:09:32.902+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:09:32.992+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:09:32.991+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:09:33.055+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 1.241 seconds
+[2026-06-19T13:10:03.342+0000] {processor.py:157} INFO - Started process (PID=254) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:10:03.345+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:10:03.348+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:10:03.347+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:10:03.834+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:10:03.887+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:10:03.886+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:10:03.939+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:10:03.938+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:10:03.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.640 seconds
+[2026-06-19T13:10:51.541+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:10:51.544+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:10:51.547+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:10:51.546+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:10:53.885+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:10:54.271+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:10:54.270+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:processamento_batch_atas' as access control is unset.
+[2026-06-19T13:10:54.276+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:10:54.273+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:10:54.336+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:10:54.335+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:10:54.412+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 2.878 seconds
+[2026-06-19T13:11:24.804+0000] {processor.py:157} INFO - Started process (PID=176) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:11:24.808+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:11:24.812+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:11:24.811+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:11:25.669+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:11:25.719+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:11:25.718+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:11:25.775+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:11:25.774+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:11:25.822+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 1.025 seconds
+[2026-06-19T13:11:56.138+0000] {processor.py:157} INFO - Started process (PID=185) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:11:56.142+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:11:56.146+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:11:56.145+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:11:57.092+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:11:57.181+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:11:57.180+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:11:57.249+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:11:57.249+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:11:57.303+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 1.175 seconds
+[2026-06-19T13:12:27.437+0000] {processor.py:157} INFO - Started process (PID=191) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:12:27.440+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:12:27.450+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:12:27.449+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:12:28.490+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:12:28.544+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:12:28.543+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:12:28.594+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:12:28.594+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:12:28.640+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 1.212 seconds
+[2026-06-19T13:12:59.014+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:12:59.018+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:12:59.020+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:12:59.020+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:13:00.295+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:13:00.370+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:13:00.369+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:13:00.456+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:13:00.455+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:13:00.514+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 1.506 seconds
+[2026-06-19T13:13:30.619+0000] {processor.py:157} INFO - Started process (PID=203) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:13:30.622+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:13:30.625+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:13:30.624+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:13:31.268+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:13:31.328+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:13:31.327+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:13:31.376+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:13:31.376+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:13:31.420+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.809 seconds
+[2026-06-19T13:14:01.705+0000] {processor.py:157} INFO - Started process (PID=209) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:14:01.707+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:14:01.710+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:14:01.709+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:14:02.376+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:14:02.437+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:14:02.436+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:14:02.491+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:14:02.490+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:14:02.534+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.835 seconds
+[2026-06-19T13:14:32.864+0000] {processor.py:157} INFO - Started process (PID=215) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:14:32.868+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:14:32.871+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:14:32.870+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:14:33.577+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:14:33.644+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:14:33.643+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:14:33.706+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:14:33.705+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:14:33.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.903 seconds
+[2026-06-19T13:15:04.058+0000] {processor.py:157} INFO - Started process (PID=221) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:15:04.061+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:15:04.063+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:15:04.063+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:15:04.645+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:15:04.704+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:15:04.703+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:15:04.758+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:15:04.758+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:15:04.797+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.746 seconds
+[2026-06-19T13:15:34.898+0000] {processor.py:157} INFO - Started process (PID=227) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:15:34.900+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:15:34.902+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:15:34.902+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:15:35.501+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:15:35.563+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:15:35.562+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:15:35.621+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:15:35.620+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:15:35.668+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.776 seconds
+[2026-06-19T13:16:06.005+0000] {processor.py:157} INFO - Started process (PID=233) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:16:06.008+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:16:06.012+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:16:06.011+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:16:06.668+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:16:06.724+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:16:06.723+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:16:06.777+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:16:06.777+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:16:06.817+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.821 seconds
+[2026-06-19T13:16:37.096+0000] {processor.py:157} INFO - Started process (PID=239) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:16:37.099+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:16:37.102+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:16:37.101+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:16:37.636+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:16:37.690+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:16:37.689+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:16:37.737+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:16:37.737+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:16:37.777+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.687 seconds
+[2026-06-19T13:17:08.040+0000] {processor.py:157} INFO - Started process (PID=245) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:17:08.042+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:17:08.044+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:17:08.044+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:17:08.595+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:17:08.654+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:17:08.654+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:17:08.734+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:17:08.734+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:17:08.777+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.744 seconds
+[2026-06-19T13:17:38.903+0000] {processor.py:157} INFO - Started process (PID=251) to work on /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:17:38.906+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_fato_compras.py for tasks to queue
+[2026-06-19T13:17:38.909+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:17:38.909+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:17:39.392+0000] {processor.py:839} INFO - DAG(s) dict_keys(['processamento_batch_atas']) retrieved from /opt/airflow/dags/dag_fato_compras.py
+[2026-06-19T13:17:39.442+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:17:39.441+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2026-06-19T13:17:39.493+0000] {logging_mixin.py:151} INFO - [2026-06-19T13:17:39.493+0000] {dag.py:3696} INFO - Setting next_dagrun for processamento_batch_atas to 2026-06-19T00:00:00+00:00, run_after=2026-06-20T00:00:00+00:00
+[2026-06-19T13:17:39.535+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_fato_compras.py took 0.640 seconds

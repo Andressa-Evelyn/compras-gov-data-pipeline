@@ -28,3 +28,17 @@ CREATE TABLE IF NOT EXISTS analytics.dim_itens (
     atualizado_em DateTime
 ) ENGINE = ReplacingMergeTree(atualizado_em)
 ORDER BY (numero_ata, item_numero);
+
+-- Tabela Fato (Star Schema)
+-- Conecta-se às dimensões por: id_orgao e cnpj_fornecedor
+CREATE TABLE IF NOT EXISTS analytics.fato_registro_precos (
+    data_processamento Date,
+    id_orgao UInt64,
+    cnpj_fornecedor String,
+    total_atas UInt32,
+    total_itens UInt32,
+    volume_financeiro_homologado Decimal(18, 4),
+    preco_medio_unitario Decimal(18, 4),
+    atualizado_em DateTime
+) ENGINE = MergeTree()
+ORDER BY (data_processamento, id_orgao, cnpj_fornecedor);
