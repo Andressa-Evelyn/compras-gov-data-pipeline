@@ -72,11 +72,6 @@ def buscar_capa_atas(data_inicio, data_fim):
 
 
 def buscar_itens_das_atas(atas):
-    """
-    Consome o endpoint 2.1_consultarARPItem_Id para cada Ata encontrada.
-    Cruza as informações da Capa com os Itens e retorna as tuplas para o banco de dados.
-    """
-    # Endpoint correto para buscar itens via ID/PNCP da Ata
     endpoint_itens = f"{API_BASE_URL}/modulo-arp/2.1_consultarARPItem_Id"
     dados_finais = []
     
@@ -84,29 +79,30 @@ def buscar_itens_das_atas(atas):
 
     for i, ata in enumerate(atas, 1):
         print(f"Processando itens da Ata {i}/{len(atas)}: {ata['numero_ata']} (PNCP: {ata['pncp_ata']})")
-        
+
         try:
             params = {"numeroControlePncpAta": ata['pncp_ata']}
             response = requests.get(endpoint_itens, params=params, timeout=30)
-            
-            if response.status_code != 200: 
-                continue
+            if response.status_code != 200: continue
                 
             dados = response.json()
             registros = dados.get("resultado", [])
             
             for item in registros:
-                # Tratamento de campos que podem vir nulos
                 cnpj = item.get("niFornecedor", "S_N")
                 item_num = item.get("numeroItem", "0")
-                
-                # Gerar o ID Único para o banco transacional (Stage CDC)
                 id_registro = f"{ata['numero_ata']}_{cnpj}_{item_num}".strip().replace(" ", "")
                 
-                # Quantidade: a API retorna vários tipos, vamos priorizar a do Vencedor
-                qtd = item.get("quantidadeHomologadaVencedor") or item.get("quantidadeHomologadaItem") or 0.0
+                # --- CORREÇÃO DAS CHAVES DA API ---
+                # Tentamos a chave 'Item' que é o padrão desse endpoint
+                qtd = item.get("quantidadeHomologadaItem") or item.get("quantidadeHomologadaVencedor") or 0.0
+                v_unit = item.get("valorUnitarioItem") or item.get("valorUnitario") or 0.0
+                v_total = item.get("valorTotalItem") or item.get("valorTotal") or 0.0
                 
-                # Monta a tupla EXATAMENTE na ordem que o banco de dados espera
+                # Debug simples para você ver no terminal se os valores estão vindo
+                #if i == 1: # Apenas para a primeira ata para não poluir o terminal
+                #    print(f"DEBUG: Item {item_num} -> Qtd: {qtd}, Unit: {v_unit}, Total: {v_total}")
+
                 dados_finais.append((
                     id_registro,
                     ata['numero_ata'],
@@ -116,21 +112,15 @@ def buscar_itens_das_atas(atas):
                     item.get("nomeRazaoSocialFornecedor", "Fornecedor Não Informado"),
                     int(item_num) if str(item_num).isdigit() else 0,
                     item.get("descricaoItem", "Sem descrição"),
-                    float(qtd),
-                    float(item.get("valorUnitario") or 0.0),
-                    float(item.get("valorTotal") or 0.0),
-                    datetime.now() # atualizado_em
+                    qtd,     # Enviamos como vier (string ou float)
+                    v_unit,  # O database.py vai limpar as vírgulas depois
+                    v_total, # O database.py vai limpar as vírgulas depois
+                    datetime.now()
                 ))
                 
         except Exception as e:
             print(f"Erro ao extrair itens da ata {ata['pncp_ata']}: {e}")
             
-        time.sleep(0.5) # Importante: Rate limit para não sobrecarregar o servidor
+        time.sleep(0.3)
         
     return dados_finais
-
-#if __name__ == "__main__":
-    # Teste rápido executando o arquivo diretamente
-   # dados = extrair_dados_api("2024-01-01", "2024-01-01")
-   # if dados:
-   #     print(f"\nSucesso! {len(dados)} itens mapeados e prontos para o Banco de Dados.")

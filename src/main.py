@@ -9,7 +9,7 @@ def main():
     
     # 2. Extração via API
     # Ajuste o período conforme a sua necessidade
-    dados = extrair_dados_api("2024-01-01", "2024-01-01")
+    dados = extrair_dados_api("2024-01-01", "2024-01-08")
     
     # 3. Carga no Stage (Transacional)
     if dados:
