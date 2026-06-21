@@ -2,7 +2,6 @@ package main
 
 import "hash/fnv"
 
-// Configurações globais
 const (
 	KafkaBroker      = "localhost:9092"
 	KafkaTopic       = "cdc.stage.stg_atas_registro_precos"

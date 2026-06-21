@@ -8,12 +8,10 @@ import (
 	"strconv"
 	"strings"
 	"time"
-
 	"github.com/ClickHouse/clickhouse-go/v2"
 	"github.com/segmentio/kafka-go"
 )
 
-// Função auxiliar para garantir a conversão segura para Float
 func parseFloatSeguro(v interface{}) float64 {
 	if v == nil {
 		return 0.0
@@ -32,7 +30,6 @@ func parseFloatSeguro(v interface{}) float64 {
 func main() {
 	log.Println("Iniciando Worker em Go...")
 
-	// 1. Conexão com o ClickHouse
 	chConn, err := clickhouse.Open(&clickhouse.Options{
 		Addr: []string{"127.0.0.1:9000"},
 		Auth: clickhouse.Auth{
@@ -44,7 +41,6 @@ func main() {
 	}
 	defer chConn.Close()
 
-	// 2. Conexão com o Kafka Consumidor
 	reader := kafka.NewReader(kafka.ReaderConfig{
 		Brokers:  []string{KafkaBroker},
 		Topic:    KafkaTopic,
@@ -105,7 +101,6 @@ func main() {
 				log.Printf("Erro dim_orgaos: %v", err)
 			}
 
-			// Convertendo os valores de forma segura
 			qtd := parseFloatSeguro(data.QuantidadeHomologada)
 			vUnit := parseFloatSeguro(data.ValorUnitario)
 			vTotal := parseFloatSeguro(data.ValorTotal)

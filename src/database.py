@@ -11,7 +11,7 @@ def inicializar_banco():
     -- 1. Criação do Schema para organizar a área de Stage
     CREATE SCHEMA IF NOT EXISTS stage;
 
-    -- 3. Criação da Tabela (Agora com DOUBLE PRECISION no lugar de NUMERIC)
+    -- 3. Criação da Tabela de Stage para armazenar os dados de Atas de Registro de Preços
     CREATE TABLE stage.stg_atas_registro_precos (
         id_registro VARCHAR(150) PRIMARY KEY,
         numero_ata VARCHAR(100) NOT NULL,
@@ -28,7 +28,7 @@ def inicializar_banco():
         atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
 
-    -- 4. Preparação para CDC (Change Data Capture)
+    -- 4. Preparação para CDC 
     ALTER TABLE stage.stg_atas_registro_precos REPLICA IDENTITY DEFAULT;
     """
     
@@ -38,7 +38,7 @@ def inicializar_banco():
         cursor = conn.cursor()
         cursor.execute(ddl_query)
         conn.commit()
-        print("Banco de dados reinicializado com novos tipos de dados (DOUBLE PRECISION).")
+        print("Banco de dados reinicializado.")
     except Exception as e:
         print(f"Erro ao inicializar banco de dados: {e}")
         if conn:
@@ -80,7 +80,6 @@ def carregar_dados_postgresql(dados):
         print("Nenhum dado recebido para inserir no banco.")
         return
 
-    # Tratamento dos dados brutos recebidos
     dados_tratados = []
     agora = datetime.now()
     
@@ -107,12 +106,11 @@ def carregar_dados_postgresql(dados):
                 qtd,
                 v_unit,
                 v_total,
-                agora # Preenche o atualizado_em exigido pelo VALUES
+                agora 
             ))
         # Se os dados já vierem como tuplas/listas
         elif isinstance(item, (list, tuple)):
             lista_item = list(item)
-            # Índices correspondentes às colunas numéricas no INSERT
             qtd = limpar_moeda(lista_item[8])
             v_unit = limpar_moeda(lista_item[9])
             v_total = limpar_moeda(lista_item[10])
@@ -154,7 +152,6 @@ def carregar_dados_postgresql(dados):
         conn = psycopg2.connect(**DB_CONFIG)
         cursor = conn.cursor()
         
-        # Inserindo os dados TRATADOS
         execute_values(cursor, query, dados_tratados)
         conn.commit()
         

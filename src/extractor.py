@@ -18,7 +18,6 @@ def extrair_dados_api(data_inicio, data_fim):
         
     print(f"Total de Atas identificadas: {len(atas)}")
     
-    # Passa as atas encontradas para buscar os itens de cada uma
     dados_completos = buscar_itens_das_atas(atas)
     return dados_completos
 
@@ -50,7 +49,7 @@ def buscar_capa_atas(data_inicio, data_fim):
             
             for item in registros:
                 if "numeroControlePncpAta" in item:
-                    # Capturamos o número PNCP (para a próxima requisição) e os dados da capa
+                    # Capturar o número PNCP (para a próxima requisição) e os dados da capa
                     atas_encontradas.append({
                         "pncp_ata": item["numeroControlePncpAta"],
                         "numero_ata": item.get("numeroAtaRegistroPreco", "N/A"),
@@ -93,15 +92,9 @@ def buscar_itens_das_atas(atas):
                 item_num = item.get("numeroItem", "0")
                 id_registro = f"{ata['numero_ata']}_{cnpj}_{item_num}".strip().replace(" ", "")
                 
-                # --- CORREÇÃO DAS CHAVES DA API ---
-                # Tentamos a chave 'Item' que é o padrão desse endpoint
                 qtd = item.get("quantidadeHomologadaItem") or item.get("quantidadeHomologadaVencedor") or 0.0
                 v_unit = item.get("valorUnitarioItem") or item.get("valorUnitario") or 0.0
                 v_total = item.get("valorTotalItem") or item.get("valorTotal") or 0.0
-                
-                # Debug simples para você ver no terminal se os valores estão vindo
-                #if i == 1: # Apenas para a primeira ata para não poluir o terminal
-                #    print(f"DEBUG: Item {item_num} -> Qtd: {qtd}, Unit: {v_unit}, Total: {v_total}")
 
                 dados_finais.append((
                     id_registro,
@@ -112,9 +105,9 @@ def buscar_itens_das_atas(atas):
                     item.get("nomeRazaoSocialFornecedor", "Fornecedor Não Informado"),
                     int(item_num) if str(item_num).isdigit() else 0,
                     item.get("descricaoItem", "Sem descrição"),
-                    qtd,     # Enviamos como vier (string ou float)
-                    v_unit,  # O database.py vai limpar as vírgulas depois
-                    v_total, # O database.py vai limpar as vírgulas depois
+                    qtd,     
+                    v_unit,  
+                    v_total, 
                     datetime.now()
                 ))
                 
