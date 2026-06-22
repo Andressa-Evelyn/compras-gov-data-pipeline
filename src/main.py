@@ -8,7 +8,7 @@ def main():
     inicializar_banco()
     
     # 2. Extração via API
-    dados = extrair_dados_api("2024-01-01", "2024-01-08")
+    dados = extrair_dados_api("2024-01-01", "2024-01-01")
     
     # 3. Carga no Stage (Transacional)
     if dados:

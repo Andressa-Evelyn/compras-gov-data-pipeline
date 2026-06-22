@@ -14,23 +14,6 @@ O fluxo de dados segue uma abordagem transacional-para-analítica em tempo real:
 4. **Data Warehouse (ClickHouse):** Recebe os dados via CDC e organiza as informações em um modelo dimensional para alta performance de leitura.
 5. **Business Intelligence (Apache Superset):** Consome do ClickHouse para renderizar os dashboards interativos.
 
-```mermaid
-graph TD
-    A[API Compras.gov.br] -->|RPA / Extractor Python| B[(PostgreSQL \n Stage / Transacional)]
-    B -->|Logs WAL| C{Debezium / Kafka \n CDC}
-    C -->|Streaming em Tempo Real| D[(ClickHouse \n Data Warehouse)]
-    D -->|Consultas Analíticas| E[Apache Superset \n Dashboards de BI]
-    
-    classDef banco fill:#336699,stroke:#fff,stroke-width:2px,color:#fff;
-    classDef api fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff;
-    classDef cdc fill:#ff9800,stroke:#fff,stroke-width:2px,color:#fff;
-    classDef bi fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff;
-    
-    class A api;
-    class B,D banco;
-    class C cdc;
-    class E bi;
-
 📊 Diagrama Entidade-Relacionamento (DER)
 O modelo analítico no ClickHouse segue a modelagem dimensional (Star Schema), otimizado para agregações de BI, composto por uma tabela Fato consolidada e dimensões de suporte.
 
