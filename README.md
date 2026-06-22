@@ -1,10 +1,10 @@
-# 🚀 Pipeline de Dados - Atas de Registro de Preços (ARP)
+# Pipeline de Dados - Atas de Registro de Preços (ARP)
 
 Este projeto implementa um pipeline de dados ponta a ponta para extração, processamento e visualização de dados de compras públicas do Governo Federal (API Compras.gov.br). A solução utiliza conceitos modernos de RPA, Change Data Capture (CDC) e Data Warehousing.
 
 ---
 
-## 🏗️ Desenho da Arquitetura
+##  Desenho da Arquitetura
 
 O fluxo de dados segue uma abordagem transacional-para-analítica em tempo real:
 
@@ -14,7 +14,7 @@ O fluxo de dados segue uma abordagem transacional-para-analítica em tempo real:
 4. **Data Warehouse (ClickHouse):** Recebe os dados via CDC e organiza as informações em um modelo dimensional para alta performance de leitura.
 5. **Business Intelligence (Apache Superset):** Consome do ClickHouse para renderizar os dashboards interativos.
 
-📊 Diagrama Entidade-Relacionamento (DER)
+### Diagrama Entidade-Relacionamento (DER)
 O modelo analítico no ClickHouse segue a modelagem dimensional (Star Schema), otimizado para agregações de BI, composto por uma tabela Fato consolidada e dimensões de suporte.
 
 erDiagram
